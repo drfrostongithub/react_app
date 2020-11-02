@@ -2,16 +2,18 @@
 
 import React from "react";
 import uniqid from "uniqid";
+import "../components/Overview.css"
 
 const Overview = (props) => {
   const { tasks } = props;
 
   return (
     <ul>
-        <p>{uniqid()}</p>
       {tasks.map((task) => {
-        return <li key={uniqid()}>{task} <br></br>
+        return <li key={uniqid()}> {task.id}{task} <space></space>
         <button class="btn-danger">Delete
+        </button>
+        <button class="btn-info">Edit
         </button>
         </li>;
       })}

@@ -49,7 +49,7 @@ class App extends Component {
             </button>
           </div>
         </form>
-        <Overview tasks={tasks} /> 
+        <Overview tasks={tasks} className="list"/> 
       </div>
     );
     
